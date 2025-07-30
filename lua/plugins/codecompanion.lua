@@ -15,6 +15,11 @@ return {
           env = {
             api_key = os.getenv("OPENAI_API_KEY"),
           },
+          schema = {
+            model = {
+              default = "gpt-4o"
+            }
+          }
         })
       end,
     },
